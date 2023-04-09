@@ -11,4 +11,5 @@ declare(strict_types=1);
  */
 return [
     App\JsonRpc\Producer\CalculatorServiceInterface::class => App\JsonRpc\Consumer\CalculatorServiceConsumer::class,
+    \Hyperf\JsonRpc\JsonRpcTransporter::class => \Hyperf\JsonRpc\JsonRpcPoolTransporter::class,
 ];

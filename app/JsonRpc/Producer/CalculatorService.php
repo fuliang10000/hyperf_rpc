@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\JsonRpc;
+namespace App\JsonRpc\Producer;
 
 use Hyperf\RpcServer\Annotation\RpcService;
 

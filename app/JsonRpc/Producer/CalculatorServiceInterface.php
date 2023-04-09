@@ -1,8 +1,7 @@
 <?php
 
 
-namespace App\JsonRpc;
-
+namespace App\JsonRpc\Producer;
 
 interface CalculatorServiceInterface
 {

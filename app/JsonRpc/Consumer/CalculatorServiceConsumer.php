@@ -3,7 +3,7 @@
 
 namespace App\JsonRpc\Consumer;
 
-use App\JsonRpc\CalculatorServiceInterface;
+use App\JsonRpc\Producer\CalculatorServiceInterface;
 use Hyperf\RpcClient\AbstractServiceClient;
 
 class CalculatorServiceConsumer extends AbstractServiceClient implements CalculatorServiceInterface

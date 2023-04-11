@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 namespace App\Controller;
-use App\JsonRpc\CalculatorServiceInterface;
+use App\JsonRpc\Interface\CalculatorServiceInterface;
 use Hyperf\Di\Annotation\Inject;
 
 class IndexController extends AbstractController

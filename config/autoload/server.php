@@ -33,7 +33,7 @@ return [
             'name' => 'jsonrpc',
             'type' => Server::SERVER_BASE,
             'host' => '0.0.0.0',
-            'port' => 9504,
+            'port' => 9500,
             'sock_type' => SWOOLE_SOCK_TCP,
             'callbacks' => [
                 Event::ON_RECEIVE => [\Hyperf\JsonRpc\TcpServer::class, 'onReceive'],

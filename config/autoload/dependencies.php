@@ -10,6 +10,7 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 return [
-    App\JsonRpc\Producer\CalculatorServiceInterface::class => App\JsonRpc\Consumer\CalculatorServiceConsumer::class,
+    App\JsonRpc\Interface\CalculatorServiceInterface::class => App\JsonRpc\Consumer\CalculatorServiceConsumer::class,
+    App\JsonRpc\Interface\GoodsServiceInterface::class => App\JsonRpc\Consumer\GoodsServiceConsumer::class,
     \Hyperf\JsonRpc\JsonRpcTransporter::class => \Hyperf\JsonRpc\JsonRpcPoolTransporter::class,
 ];

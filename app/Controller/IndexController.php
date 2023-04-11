@@ -10,23 +10,23 @@ declare(strict_types=1);
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 namespace App\Controller;
-use App\JsonRpc\Interface\CalculatorServiceInterface;
+use App\JsonRpc\Interface\GoodsServiceInterface;
 use Hyperf\Di\Annotation\Inject;
 
 class IndexController extends AbstractController
 {
 
     #[Inject]
-    protected CalculatorServiceInterface $calculatorRpcService;
+    protected GoodsServiceInterface $GoodsRpcService;
 
     public function index()
     {
         $user = $this->request->input('user', 'Hyperf');
         $method = $this->request->getMethod();
-        $number = $this->calculatorRpcService->add(50, 45);
+        $user = $this->GoodsRpcService->getName($user);
         return [
             'method' => $method,
-            'message' => "Hello $user $number.",
+            'message' => "Hello $user.",
         ];
     }
 }

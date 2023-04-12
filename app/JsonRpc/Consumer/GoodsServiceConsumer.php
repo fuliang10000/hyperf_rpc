@@ -18,6 +18,11 @@ class GoodsServiceConsumer extends AbstractServiceClient implements GoodsService
      */
     protected $protocol = 'jsonrpc';
 
+    public function getUpperName(string $name): string
+    {
+        return strtoupper($this->getName($name));
+    }
+
     public function getName(string $name): string
     {
         return $this->__request(__FUNCTION__, compact('name'));

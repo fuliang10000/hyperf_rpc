@@ -23,7 +23,7 @@ class IndexController extends AbstractController
     {
         $user = $this->request->input('user', 'Hyperf');
         $method = $this->request->getMethod();
-        $user = $this->GoodsRpcService->getName($user);
+        $user = $this->GoodsRpcService->getUpperName($user);
         return [
             'method' => $method,
             'message' => "Hello $user.",
